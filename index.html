@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Rivas Herrera | Freelancer</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JRH</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Jesús Rivas Herrera</h1>
+            <p class="subtitle">Freelancer Senior</p>
+            <div class="accent-bar"></div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <h2>Ponte en contacto</h2>
+        <form id="contactForm">
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Tu Correo" required>
+            </div>
+            <div class="input-group">
+                <textarea id="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" id="btnEnviar">Enviar Mensaje</button>
+        </form>
+        <div id="formFeedback" class="hidden"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

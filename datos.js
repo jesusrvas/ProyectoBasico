@@ -10,3 +10,4 @@ console.error("Error al conectar:", error);
 }
 }
 cargarDatos();
+

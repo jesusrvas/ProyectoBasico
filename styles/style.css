@@ -49,7 +49,7 @@ h1 { font-size: 3.5rem; margin-bottom: 10px; color: white; }
 .accent-bar { width: 100px; height: 5px; background: var(--pastel-purple); margin: 20px auto; border-radius: 10px; }
 
 /* Formulario */
-.contact-section {
+.formularios {
     padding: 100px 20px;
     max-width: 600px;
     margin: 0 auto;

@@ -58,11 +58,11 @@
         // 1. Configuración de conexión
   const SUPABASE_URL = 'https://gueyujsmfwjpevfchnjc.supabase.co';
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd1ZXl1anNtZndqcGV2ZmNobmpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3OTIyOTUsImV4cCI6MjA4MzM2ODI5NX0.OYTnY_465R9Isiw3mJ-qeLP9x7SXntoG1gIiXz6kPKwÍ';
-  const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  const bd = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
   // 2. Función para obtener datos de Postgres
   async function obtenerDatos() {
-    const { data, error } = await supabase
+    const { data, error } = await bd
       .from('personas') // Nombre de tu tabla
       .select('primer_apellido');
 
